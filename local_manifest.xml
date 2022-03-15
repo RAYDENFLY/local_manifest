@@ -3,7 +3,7 @@
 
 <!-- Remotes -->
 	<remote  name="Yurika"
-                 fetch="https://github.com/ Yurika-Projects" />
+                 fetch="https://github.com/Yurika-Projects" />
 	<remote  name="Gitlab"
 	 	 fetch="https://gitlab.com/" />
 	<remote  name="PrajjuS"
