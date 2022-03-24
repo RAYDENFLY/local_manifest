@@ -1,16 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-
+        
+        <!--MainTree-->
 	<remote name="yurika"
 		fetch="https://github.com/Yurika-Projects" />
-	<remote name="clang"
-		fetch="https://github.com/kdrag0n" />
+        <remote name="ray"
+		fetch="https://github.com/RAYDENFLY" />
+	
+        <!--ClangCosmic-->
+	<remote name="cosmic"
+	        fetch="https://gitlab.com/GhostMaster69-dev"
+	        revision="master" />
+
+        <!--anotherstuff-->
 	<remote name="uni"
 		fetch="https://github.com/Ghostmaster69-dev" />
 	<remote name="line"
 		fetch="https://github.com/LineageOS" />
-	<remote name="ray"
-		fetch="https://github.com/RAYDENFLY" />
 	<remote name="Arrow"
 		fetch="https://github.com/ArrowOS" />
 	<remote name="addy"
@@ -34,6 +40,6 @@
 	<project path="kernel/xiaomi/vince" name="android_kernel_xiaomi_vince-4.9" remote="ryuzenn" revision="VinceR" clone-depth="1" />
 	
 	<!--compiler-->
-	<project path="prebuilts/clang/host/linux-x86/clang-cosmic" name="cosmic-clang" remote="azure" revision="main" clone-depth="1" />
+        <project path="prebuilts/clang/host/linux-x86/clang-cosmic" name="cosmic-clang" remote="cosmic" clone-depth="1" />
 
 </manifest>
