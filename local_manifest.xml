@@ -1,39 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-	<remote name="yurika"
-		fetch="https://github.com/Yurika-Projects" />
-	<remote name="clang"
-		fetch="https://github.com/kdrag0n" />
-	<remote name="uni"
-		fetch="https://github.com/Ghostmaster69-dev" />
-	<remote name="line"
-		fetch="https://github.com/LineageOS" />
-	<remote name="ray"
-		fetch="https://github.com/RAYDENFLY" />
-	<remote name="Arrow"
-		fetch="https://github.com/ArrowOS" />
-	<remote name="addy"
-		fetch="https://github.com/adnan-44" />
-	<remote name="pe"
-		fetch="https://github.com/PixelExperience" />
-	<remote name="sri"
-		fetch="https://github.com/gamehackerever" />
-	<remote name="azure"
-		fetch="https://gitlab.com/Panchajanya1999" />
-	<remote name="prajju"
-		fetch="https://github.com/PrajjuS" />
-	<remote name="Rn4"
-		fetch="https://github.com/Redmi-note-4x" />
-	<remote name="ryuzenn"
-		fetch="https://github.com/kutemeikito" />
+ <!-- GCamGo -->
+ <project path="packages/apps/GCamGOPrebuilt" name="ArrowOS-Devices/android_packages_apps_GCamGOPrebuilt" remote="github" revision="arrow-12.0" />
 
-        <!--Tree-->	
-	<project path="device/xiaomi/vince" name="fluid_device_xiaomi_vince" remote="ray" revision="fluid-12" clone-depth="1" />
-	<project path="vendor/xiaomi/vince" name="android_vendor_xiaomi_vince" remote="yurika" revision="12" clone-depth="1" />
-	<project path="kernel/xiaomi/vince" name="android_kernel_xiaomi_vince" remote="uni" revision="12" clone-depth="1" />
-	
-	<!--compiler-->
-	<project path="prebuilts/clang/host/linux-x86/clang-15" name="azure-clang" remote="azure" revision="main" clone-depth="1" />
+ <!-- Trees -->
+ <project path="device/xiaomi/vince" name="RAYDENFLY/fluid_device_xiaomi_vince" remote="github" revision="12" />
+ <project path="device/xiaomi/msm8953-common" name="GhostMaster69-dev/android_device_xiaomi_msm8953-common" remote="github" revision="12" />
+ <project path="vendor/xiaomi" name="GhostMaster69-dev/android_vendor_xiaomi_vince" remote="github" revision="12" />
+ <project path="kernel/xiaomi/vince" name="GhostMaster69-dev/android_kernel_xiaomi_vince" remote="github" revision="stable-perf" />
+
+ <!-- Remove and Clone Hals -->
+ <remove-project name="android_hardware_qcom_display" />
+ <remove-project name="android_hardware_qcom_wlan" />
+ <project path="hardware/qcom-caf/msm8996/display" name="GhostMaster69-dev/hardware_qcom-caf_msm8996-r_display" remote="github" revision="eleven" />
+ <project path="hardware/qcom-caf/wlan" name="GhostMaster69-dev/android_hardware_qcom_wlan" remote="github" revision="android_12-caf" />
+
+ <!-- Toolchain -->
+ <project path="prebuilts/clang/host/linux-x86/cosmic-clang" name="GhostMaster69-dev/Cosmic-Clang.git" remote="gitlab" revision="main" clone-depth="1" />
 
 </manifest>
